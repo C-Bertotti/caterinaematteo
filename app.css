@@ -1,0 +1,695 @@
+h1, h2, h4 {
+    font-family: "Amatic SC", cursive;
+    font-weight: 400;
+  }
+  
+  h1 {
+    font-size: 70px;
+    line-height: 0.9;
+    margin: 0;
+  }
+  
+  h2 {
+    font-size: 45px;
+    line-height: 1.1;
+  }
+  
+  h3 {
+    text-transform: uppercase;
+    font-size: 16px;
+    margin: 15px 0 20px;
+  }
+  h3.h3--secfont {
+    font-family: "Amatic SC", cursive;
+    font-weight: 400;
+    font-size: 45px;
+  }
+  
+  h4 {
+    font-size: 35px;
+    margin: 0 0 15px;
+    text-transform: lowercase;
+  }
+  
+  h5 {
+    font-size: 15px;
+    font-weight: 500;
+    color: #C78665;
+    margin: 8px 0 0;
+  }
+  
+  p {
+    margin: 0;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  p strong {
+    font-weight: 600;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #121F38;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #121F38;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .mycontainer {
+    width: 80%;
+    margin: auto;
+  }
+  .mycontainer.container-m {
+    max-width: 500px;
+  }
+  @media screen and (min-width: 801px) {
+    .mycontainer.container-m {
+      max-width: 800px;
+    }
+  }
+  @media screen and (min-width: 801px) {
+    .mycontainer.container-l {
+      max-width: 1100px;
+    }
+  }
+  
+  /* .divider {
+    background-image: url("img/bg.jpg");
+    background-size: cover;
+  } */
+  .divider__small {
+    height: 35px;
+  }
+  .divider__med {
+    height: 75px;
+  }
+  .divider__lg {
+    height: 114px;
+  }
+  
+  .bg-pri {
+    background-color: #EDF5F7;
+  }
+  
+  @media screen and (min-width: 480px) {
+    .d-none-xs {
+      display: none;
+    }
+  }
+  
+  .mt-10 {
+    margin-top: 10px;
+  }
+  
+  header {
+    border-bottom: 15px solid #EDF5F7;
+  }
+  header nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  @media screen and (min-width: 1025px) {
+    header nav {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  header nav .nav__left {
+    display: flex;
+    justify-content: space-between;
+    padding: 11px 0;
+    align-items: center;
+  }
+  header nav .nav__left .nav__title {
+    font-family: "Amatic SC", cursive;
+    font-size: 25px;
+  }
+  header nav .nav__left #burger {
+    height: 18px;
+  }
+  @media screen and (min-width: 1025px) {
+    header nav .nav__left #burger {
+      display: none;
+    }
+  }
+  header nav #nav__right {
+    display: none;
+  }
+  @media screen and (min-width: 1025px) {
+    header nav #nav__right {
+      display: block;
+    }
+  }
+  header nav #nav__right ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+  @media screen and (min-width: 1025px) {
+    header nav #nav__right ul {
+      margin: 0;
+    }
+  }
+  header nav #nav__right ul li {
+    margin: 0;
+    width: 100%;
+  }
+  header nav #nav__right ul li a {
+    display: inline-block;
+    width: 100%;
+    padding: 15px 0;
+  }
+  header nav #nav__right ul li a span {
+    position: relative;
+  }
+  header nav #nav__right ul li a.active span::after, header nav #nav__right ul li a:hover span::after {
+    content: "";
+    background-color: #EDF5F7;
+    height: 12px;
+    position: absolute;
+    z-index: -10;
+    top: 10px;
+    right: -12px;
+    left: -12px;
+  }
+  @media screen and (min-width: 1025px) {
+    header nav #nav__right ul li {
+      display: inline-block;
+      width: auto;
+      margin: 0 20px;
+    }
+  }
+  header nav #nav__right.active {
+    display: block;
+  }
+  
+  section {
+    padding: 45px 0;
+    text-align: center;
+  }
+  section .section__fiore {
+    height: 20px;
+  }
+  section .section__titolo {
+    margin: 0 0 25px;
+    text-transform: lowercase;
+  }
+  section .section__titolo.main__title {
+    margin-bottom: 0;
+  }
+  section .section__cuore {
+    height: 12px;
+    margin-top: 30px;
+  }
+  section .section__box__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  @media screen and (min-width: 801px) {
+    section .section__box__wrapper {
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  }
+  section .section__box {
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 1px 0px 10px rgba(211, 222, 227, 0.7);
+    transition: all 0.2s;
+  }
+  section .section__box:hover {
+    transform: scale(1.05);
+  }
+  section .section__box:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 801px) {
+    section .section__box:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+  @media screen and (min-width: 801px) {
+    section .section__box {
+      flex-basis: calc((100% - 240px) / 3);
+    }
+  }
+  section .section__box p {
+    font-size: 14px;
+    line-height: 1.3;
+  }
+  section .section__box__icona {
+    height: 60px;
+  }
+  
+  @media screen and (min-width: 1025px) {
+    .slider__wrapper {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  }
+  
+  .swiper-container {
+    --swiper-navigation-size: 10px;
+    box-shadow: 0px 0px 30px rgba(211, 222, 227, 0.6);
+  }
+  .swiper-container p {
+    font-size: 14px;
+  }
+  .swiper-container:not(:last-of-type) {
+    margin-bottom: 40px;
+  }
+  @media screen and (min-width: 1025px) {
+    .swiper-container:not(:last-of-type) {
+      margin-bottom: 0;
+    }
+  }
+  @media screen and (min-width: 1025px) {
+    .swiper-container {
+      width: calc( ( 100% - 60px) / 3);
+    }
+  }
+  
+  .slider .swiper-slide.cover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .slider .swiper-slide.bg-pri {
+    border: 1px solid #E8F3F4;
+  }
+  .slider .swiper-slide.slider__int > div {
+    padding: 50px 0 40px;
+  }
+  .slider .swiper-slide.slider__int .section__box__icona {
+    height: 30px;
+  }
+  
+  .slider__matrimonio .swiper-slide {
+    height: 230px;
+  }
+  
+  .slider__viaggio .swiper-slide {
+    height: 340px;
+    background-color: white;
+  }
+  .slider__viaggio .swiper-slide.slider__int > div {
+    padding: 50px 18px 40px;
+  }
+  @media screen and (min-width: 1025px) {
+    .slider__viaggio .swiper-slide.slider__int > div {
+      padding: 50px 40px 40px;
+    }
+  }
+  .slider__viaggio h3 {
+    margin-bottom: 10px;
+  }
+  .slider__viaggio p {
+    margin-bottom: 5px;
+  }
+  @media screen and (min-width: 1025px) {
+    .slider__viaggio .swiper-container {
+      width: calc( ( 100% - 60px) / 2);
+    }
+  }
+  
+  .swiper-button-next,
+  .swiper-button-prev {
+    top: 90% !important;
+    background-color: #fff;
+    box-shadow: 0px 0px 30px #c8ced8;
+    border-radius: 100%;
+    height: 20px !important;
+    width: 20px !important;
+  }
+  
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    color: #C78665;
+  }
+  
+  .swiper-slide {
+    transform: translate3d(-5px, 0, 0) !important;
+  }
+  
+  .slider__img__wrapper {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .slider__img__wrapper .slider__border {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border: 30px solid white;
+  }
+  
+  /* .chiesa {
+    background-image: url("img/foto/chiesa.jpeg");
+    background-position-x: right;
+    background-position-y: center;
+  }
+  
+  .ristorante {
+    background-image: url("img/foto/rifugiomaranza.jpg");
+  }
+  
+  .img__caterina {
+    background-image: url("img/foto/caterina.jpg");
+    background-position-y: top;
+  }
+  
+  .img__matteo {
+    background-image: url("img/foto/matteo.jpg");
+    background-position-x: left;
+  } */
+  
+  #map__sec {
+    padding-bottom: 0;
+  }
+  
+  #map {
+    width: 100%;
+    height: 400px;
+  }
+  #map h3.map__popup__title {
+    font-family: "Amatic SC", cursive;
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  #map p.map__popup__p {
+    padding: 0 20px;
+    font-weight: 300;
+    font-size: 14px;
+  }
+  
+  /* .marker {
+    background-image: url("img/icone/pin.svg");
+    background-size: cover;
+    width: 31px;
+    height: 39px;
+    cursor: pointer;
+  } */
+  
+  .mapboxgl-popup {
+    max-width: 200px;
+  }
+  
+  .mapboxgl-popup-content {
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+  }
+  
+  .mapboxgl-popup {
+    max-width: 700px !important;
+  }
+  
+  .regalo__box {
+    margin-top: 40px;
+    padding: 35px 20px;
+    background-color: #fff;
+    text-align: left;
+  }
+  @media screen and (min-width: 320px) {
+    .regalo__box {
+      padding: 35px 15px;
+    }
+  }
+  @media screen and (min-width: 480px) {
+    .regalo__box {
+      padding: 35px 25px;
+    }
+  }
+  @media screen and (min-width: 1025px) {
+    .regalo__box {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  .regalo__box .regalo__box__column:not(:last-of-type) {
+    margin-bottom: 10px;
+  }
+  @media screen and (min-width: 1025px) {
+    .regalo__box .regalo__box__column:not(:last-of-type) {
+      margin-bottom: 0;
+    }
+  }
+  @media screen and (min-width: 1025px) {
+    .regalo__box .regalo__box__column {
+      flex-basis: calc( ( 100% - 60px) / 3);
+    }
+  }
+  .regalo__box h5 {
+    font-size: 10px;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+  }
+  .regalo__box p {
+    font-size: 11px;
+  }
+  @media screen and (min-width: 320px) {
+    .regalo__box p {
+      font-size: 13px;
+    }
+  }
+  @media screen and (min-width: 480px) {
+    .regalo__box p {
+      font-size: 15px;
+    }
+  }
+  .regalo__box p:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  
+  .viaggio p.viaggio__title,
+  .viaggio h1 {
+    display: inline-block;
+  }
+  .viaggio p.viaggio__title {
+    font-family: "Amatic SC", cursive;
+    font-weight: 400;
+    font-size: 140px !important;
+    margin-right: 15px !important;
+    color: #C78665;
+  }
+  @media screen and (min-width: 801px) {
+    .viaggio p.viaggio__title {
+      font-size: 160px !important;
+    }
+  }
+  .viaggio p.viaggio__title::after {
+    content: "x";
+    font-size: 50px;
+    vertical-align: middle;
+  }
+  @media screen and (min-width: 801px) {
+    .viaggio p.viaggio__title::after {
+      font-size: 60px;
+    }
+  }
+  .viaggio__caption__wrp {
+    display: flex;
+    align-items: center;
+  }
+  
+  .sec__box {
+    display: inline-block;
+    background-color: #F3E0D6;
+    padding: 25px;
+    margin: 40px 0;
+  }
+  
+  @media screen and (min-width: 801px) {
+    .tappa__wrp {
+      display: flex;
+    }
+  }
+  @media screen and (min-width: 801px) {
+    .tappa__wrp:nth-child(3n+1) {
+      flex-direction: row-reverse;
+    }
+  }
+  @media screen and (min-width: 801px) and (min-width: 801px) {
+    .tappa__wrp:nth-child(3n+1) .tappa__box {
+      margin-left: 20px;
+      margin-right: 0px;
+    }
+  }
+  .tappa__box {
+    text-align: left;
+    padding: 45px 35px;
+    margin: 10px 0;
+  }
+  @media screen and (min-width: 801px) {
+    .tappa__box {
+      flex-basis: 60%;
+      margin-right: 20px;
+    }
+  }
+  .tappa__date {
+    font-family: "Amatic SC", cursive;
+    font-size: 20px;
+  }
+  .tappa__title {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  .tappa__text p:not(:last-child) {
+    margin-bottom: 12px;
+  }
+  .tappa__img {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+  }
+  /* .tappa__img.roma {
+    background-image: url("img/foto/roma.jpg");
+  }
+  .tappa__img.napoli {
+    background-image: url("img/foto/pompei.jpg");
+  }
+  .tappa__img.vigolana {
+    background-image: url("img/foto/vigolana.jpg");
+  } */
+  @media screen and (min-width: 801px) {
+    .tappa__img {
+      height: auto;
+      flex-basis: 40%;
+      margin: 10px 0;
+    }
+  }
+  
+  /* .heroBgFlower {
+    padding: 40px 0;
+    background-image: url("img/bg.jpg");
+    background-size: cover;
+    text-align: center;
+  } */
+  .heroBgFlower .cerchio {
+    background-color: #fff;
+    border-radius: 100%;
+    width: 90%;
+    height: auto;
+    max-height: 290px;
+    max-width: 290px;
+    margin: auto;
+    box-shadow: 0px 0px 30px #DCE0E6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .heroBgFlower .cerchio:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+  @media screen and (min-width: 801px) {
+    .heroBgFlower .cerchio {
+      max-height: 350px;
+      max-width: 350px;
+    }
+  }
+  .heroBgFlower .cerchio .icona {
+    height: 60px;
+  }
+  @media screen and (min-width: 801px) {
+    .heroBgFlower .cerchio .icona {
+      height: 70px;
+    }
+  }
+  .heroBgFlower .cerchio p {
+    margin: 5px 0 10px;
+    font-weight: 300;
+    font-size: 15px;
+  }
+  @media screen and (min-width: 801px) {
+    .heroBgFlower .cerchio p {
+      margin: 7px 0 10px;
+      font-size: 17px;
+    }
+  }
+  @media screen and (min-width: 801px) {
+    .heroBgFlower .cerchio h1 {
+      font-size: 80px;
+    }
+  }
+  
+  .date__box,
+  .date__wrapper,
+  .date__right {
+    display: flex;
+  }
+  
+  .date__box {
+    margin: auto;
+    max-width: 250px;
+    justify-content: center;
+  }
+  .date__box .date__wrapper div {
+    text-align: left;
+  }
+  .date__box .date__wrapper div p {
+    font-weight: 600;
+    font-size: 10px;
+  }
+  .date__box .date__wrapper div p.date {
+    font-size: 40px;
+    font-weight: 500;
+    margin-top: -6px;
+  }
+  .date__box .date__wrapper .date__left {
+    padding-right: 20px;
+    border-right: 1px solid #C78665;
+  }
+  .date__box .date__wrapper .date__right {
+    padding-left: 20px;
+  }
+  .date__box .date__wrapper .date__right #date-h::after {
+    content: ":";
+  }
+  
+  footer {
+    background-color: #F3E0D6;
+  }
+  footer .mycontainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  footer .mycontainer > div {
+    display: flex;
+    align-items: center;
+  }
+  footer .footer__sposi {
+    height: 30px;
+    fill: #121F38;
+    padding: 10px 0;
+  }
+  @media screen and (min-width: 801px) {
+    footer .footer__sposi {
+      padding: 15px 0;
+    }
+  }
+  footer p {
+    font-weight: 400;
+    font-size: 12px;
+    margin: 0 7px;
+  }
+  
